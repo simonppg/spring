@@ -9,7 +9,8 @@ plugins {
 // mainClassName = 'com.spring.basics.tutorial.ScopeApplication'
 // mainClassName = 'com.spring.basics.tutorial.ComponentScanApplication'
 // mainClassName = 'com.spring.basics.tutorial.CdiApplication'
-mainClassName = 'com.spring.basics.tutorial.XmlContextApplication'
+// mainClassName = 'com.spring.basics.tutorial.XmlContextApplication'
+mainClassName = 'com.spring.basics.tutorial.PropertiesApplication'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
