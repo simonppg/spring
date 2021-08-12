@@ -7,3 +7,9 @@ Following spring framwork tutorial. [playlist](https://www.youtube.com/playlist?
 ```shell
 ./gradlew run
 ```
+
+## Running the tests
+
+```shell
+./gradlew test
+```
