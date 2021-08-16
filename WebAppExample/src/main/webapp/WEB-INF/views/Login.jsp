@@ -7,7 +7,7 @@ pageEncoding="UTF-8"%>
         <title>Login</title>
     </head>
     <body>
-        <form action="/spring-mvc/login" method="POST">
+        <form action="/login" method="POST">
             <p><font color="red">${errorMessage}</font></p>
             Name: <input type="text" name="name"/>
             Password: <input type="password" name="password"/>
