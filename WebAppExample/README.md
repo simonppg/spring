@@ -1,6 +1,6 @@
 # WebAppExample
 
-This app create a servlet using tomcat 7 in java ee 6.
+This app create a naive login controller using spring web MVC running on tomcat 7 in java ee 6.
 
 ## Compile the code
 
