@@ -13,3 +13,9 @@ mvn compile
 ```shell
 mvn tomcat7:run
 ```
+
+### Endpoint list
+
+`localhost:8080/`
+`localhost:8080/login.do`
+`localhost:8080/spring-mvc/login`
