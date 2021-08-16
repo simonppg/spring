@@ -4,11 +4,14 @@ pageEncoding="UTF-8"%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>The title</title>
+        <title>Login</title>
     </head>
     <body>
         <form action="/login.do" method="POST">
-            Enter your name <input type="text" name="name"/> <input type="submit" value="login"/>
+            <p><font color="red">${errorMessage}</font></p>
+            Name: <input type="text" name="name"/>
+            Password: <input type="password" name="password"/>
+            <input type="submit" value="login"/>
         </form>
     </body>
 </html>
