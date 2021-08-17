@@ -16,7 +16,7 @@ public class AfterAopAspect {
 
   //execution(* PACKAGE.*.*(..))
   @AfterReturning(
-  value = "execution(* com.tutorial.spring.aop.springaop.business.*.*(..))",
+  value = "com.tutorial.spring.aop.springaop.aspect.CommonJoinPointConfig.businessLayerExecution()",
   returning = "result"
   )
   public void afterReturning(JoinPoint joinPoint, Object result) {
@@ -24,14 +24,14 @@ public class AfterAopAspect {
   }
 
   @AfterThrowing(
-  value = "execution(* com.tutorial.spring.aop.springaop.business.*.*(..))",
+  value = "com.tutorial.spring.aop.springaop.aspect.CommonJoinPointConfig.businessLayerExecution()",
   throwing = "exception"
   )
   public void afterTrhowing(JoinPoint joinPoint) {
     logger.info("{} trhow exception {}", joinPoint);
   }
 
-  @After(value = "execution(* com.tutorial.spring.aop.springaop.business.*.*(..))")
+  @After( value = "com.tutorial.spring.aop.springaop.aspect.CommonJoinPointConfig.businessLayerExecution()")
   public void after(JoinPoint joinPoint) {
     logger.info("after execution of {}", joinPoint);
   }
