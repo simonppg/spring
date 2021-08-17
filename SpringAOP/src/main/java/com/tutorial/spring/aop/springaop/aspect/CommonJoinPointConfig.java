@@ -8,4 +8,16 @@ public class CommonJoinPointConfig {
 
   @Pointcut("execution(* com.tutorial.spring.aop.springaop.business.*.*(..))")
   public void businessLayerExecution() { }
+
+  @Pointcut("com.tutorial.spring.aop.springaop.aspect.CommonJoinPointConfig.dataLayerExecution() && com.tutorial.spring.aop.springaop.aspect.CommonJoinPointConfig.businessLayerExecution()")
+  public void allLayerExecution() { }
+
+  @Pointcut("bean(dao*)")
+  public void beanStartingWithDao() { }
+
+  @Pointcut("bean(*dao*)")
+  public void beanContainingDao() { }
+
+  @Pointcut("within(com.tutorial.spring.aop.springaop.data..*)")
+  public void dataLayerExecutionWithWithin() { }
 }
