@@ -1,4 +1,4 @@
-package com.tutorial.database.databasedemo;
+package com.tutorial.database.databasedemo.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
