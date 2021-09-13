@@ -1,4 +1,4 @@
-package com.springsecurity.tutorial.security.student;
+package com.springsecurity.tutorial.securityapp.student;
 
 public class Student {
   private final Integer studentId;

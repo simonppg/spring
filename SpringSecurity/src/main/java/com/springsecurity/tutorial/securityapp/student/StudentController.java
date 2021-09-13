@@ -1,4 +1,4 @@
-package com.springsecurity.tutorial.security.student;
+package com.springsecurity.tutorial.securityapp.student;
 
 import java.util.Arrays;
 import java.util.List;
