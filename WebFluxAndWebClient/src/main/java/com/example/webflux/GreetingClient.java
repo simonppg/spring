@@ -23,4 +23,9 @@ public class GreetingClient {
       .map(Greeting::getMessage);
 	}
 
+	public Mono<Greeting> getGreeting() {
+    return this.client.get().uri("/hello").accept(MediaType.APPLICATION_JSON)
+      .retrieve()
+      .bodyToMono(Greeting.class);
+	}
 }
